@@ -7,14 +7,16 @@
     {
       "route": "/home",
       "redirect": "/"
+    },
+    {
+      "route": "/blog",
+      "rewrite": "/blog.html"
+    },
+    {
+      "route": "/blog/why-ai-advisory-works",
+      "rewrite": "/blog/why-ai-advisory-works.html"
     }
   ],
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/index.html",
-      "statusCode": 200
-    }
-  },
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
