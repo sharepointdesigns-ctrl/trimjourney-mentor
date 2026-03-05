@@ -1,24 +1,26 @@
 /* ============================================================
-   GLOBAL STYLES — Apex Consulting
+   GLOBAL STYLES — Trimjourney
    ============================================================ */
 
 :root {
-  --primary: #1a3c5e;
-  --primary-dark: #0f2540;
-  --primary-light: #2d5f8a;
-  --accent: #e8892b;
-  --accent-light: #f0a855;
-  --text: #1a1a2e;
-  --text-muted: #5a6478;
-  --text-light: #8a92a0;
+  --primary: #0a1f44;
+  --primary-dark: #060e26;
+  --primary-light: #1a3a8a;
+  --accent: #00c4b4;
+  --accent-light: #00e6d4;
+  --accent-purple: #7c3aed;
+  --text: #0f1c2e;
+  --text-muted: #4a5568;
+  --text-light: #718096;
   --bg: #ffffff;
-  --bg-soft: #f8f9fc;
-  --bg-dark: #0f1c2e;
+  --bg-soft: #f7f9fc;
+  --bg-dark: #0a1f44;
   --border: #e2e8f0;
   --border-light: #f0f4f8;
   --success: #22c55e;
-  --gradient: linear-gradient(135deg, #1a3c5e 0%, #2d5f8a 50%, #e8892b 100%);
-  --gradient-text: linear-gradient(135deg, #1a3c5e, #e8892b);
+  --gradient: linear-gradient(135deg, #0a1f44 0%, #1a3a8a 50%, #00c4b4 100%);
+  --gradient-text: linear-gradient(135deg, #1a3a8a, #00c4b4);
+  --gradient-ai: linear-gradient(135deg, #7c3aed, #00c4b4);
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
   --shadow: 0 4px 16px rgba(0,0,0,0.10);
   --shadow-lg: 0 12px 40px rgba(0,0,0,0.14);
@@ -91,6 +93,13 @@ img { max-width: 100%; display: block; }
   background-clip: text;
 }
 
+.gradient-text-ai {
+  background: var(--gradient-ai);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ---- SECTION HEADER ---- */
 .section-header {
   text-align: center;
@@ -100,8 +109,8 @@ img { max-width: 100%; display: block; }
 
 .section-tag {
   display: inline-block;
-  background: rgba(26,60,94,0.08);
-  color: var(--primary);
+  background: rgba(0,196,180,0.1);
+  color: #0098a0;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -158,7 +167,7 @@ img { max-width: 100%; display: block; }
   background: var(--primary-dark);
   border-color: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(26,60,94,0.3);
+  box-shadow: 0 8px 24px rgba(10,31,68,0.3);
 }
 
 .btn-accent {
@@ -167,8 +176,8 @@ img { max-width: 100%; display: block; }
   border-color: var(--accent);
 }
 .btn-accent:hover {
-  background: #d4771f;
-  border-color: #d4771f;
+  background: #00a89a;
+  border-color: #00a89a;
   transform: translateY(-2px);
 }
 
@@ -232,22 +241,22 @@ img { max-width: 100%; display: block; }
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--primary);
   display: flex;
   align-items: center;
-  gap: 6px;
   flex-shrink: 0;
 }
 
-.logo-icon {
-  color: var(--accent);
-  font-size: 1rem;
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
-.logo-accent {
-  color: var(--accent);
+.logo-img-light {
+  height: 32px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -329,18 +338,13 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.footer .logo {
-  color: #fff;
-  margin-bottom: 16px;
-  display: inline-flex;
-}
-
 .footer-brand p {
   color: rgba(255,255,255,0.6);
   font-size: 0.9rem;
   line-height: 1.7;
   max-width: 280px;
   margin-bottom: 24px;
+  margin-top: 16px;
 }
 
 .social-links {
@@ -452,7 +456,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center top, rgba(45,95,138,0.4) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center top, rgba(0,196,180,0.2) 0%, transparent 70%);
 }
 
 .page-hero-inner {

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Apex Consulting</title>
-  <meta name="description" content="Get in touch with Apex Consulting for a free strategy consultation. We respond within 24 hours." />
+  <title>Book a Session | Trimjourney</title>
+  <meta name="description" content="Book a 30-minute AI advisory session with a Trimjourney industry specialist for $100. Get a clear, actionable plan for your business challenge." />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
@@ -14,17 +14,16 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-icon">▲</span> Apex<span class="logo-accent">Consulting</span>
+        <img src="https://cdn.prod.website-files.com/6809eaaf47bf019524e9dd22/6809fa63d39a2c935b9d1035_logo-trimjourney.avif" alt="Trimjourney" class="logo-img" />
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="agents.html">Our Agents</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="case-studies.html">Case Studies</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+        <a href="contact.html" class="btn btn-primary">Book a Session</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -34,9 +33,9 @@
 
   <section class="page-hero">
     <div class="container page-hero-inner">
-      <div class="section-tag">Get In Touch</div>
-      <h1>Let's Talk About Your <span class="gradient-text">Business</span></h1>
-      <p>Every engagement starts with a conversation. Tell us about your challenge and we'll connect you with the right expert within 24 hours.</p>
+      <div class="section-tag">Book a Session</div>
+      <h1>Talk to Your <span class="gradient-text">Industry AI Advisor</span></h1>
+      <p>30 minutes. $100 commitment. Walk away with a clear, actionable plan tailored to your specific business challenge.</p>
     </div>
   </section>
 
@@ -46,123 +45,100 @@
 
       <!-- FORM -->
       <div class="contact-form-wrap">
-        <h2>Book Your Free <span class="gradient-text">Consultation</span></h2>
-        <p>Fill in the details below and a senior consultant will reach out within 24 hours.</p>
+        <h2>Book Your <span class="gradient-text">Advisory Session</span></h2>
+        <p>Tell us about your business and challenge. We'll confirm your session and match you with the right agent.</p>
 
         <form class="contact-form" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" name="firstName" placeholder="James" required />
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" required />
             </div>
             <div class="form-group">
               <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Morgan" required />
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" required />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="email">Work Email *</label>
-              <input type="email" id="email" name="email" placeholder="james@company.com" required />
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@yourbusiness.com" required />
             </div>
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="+1 (800) 555-0199" />
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
             </div>
           </div>
 
           <div class="form-group">
-            <label for="company">Company Name *</label>
-            <input type="text" id="company" name="company" placeholder="Acme Corporation" required />
+            <label for="company">Business Name *</label>
+            <input type="text" id="company" name="company" placeholder="Your business name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="industry">Select Your Industry Agent *</label>
+            <select id="industry" name="industry" required>
+              <option value="" disabled selected>Choose your industry</option>
+              <option value="healthcare">Healthcare (Clinics, Private Practice, Home Health)</option>
+              <option value="finance">Finance &amp; Banking (Advisors, Lending, Insurance, Accounting)</option>
+              <option value="retail">Retail &amp; E-Commerce (Brick-and-mortar, Online Store)</option>
+              <option value="legal">Legal Services (Law Firms, Solo Practitioners)</option>
+              <option value="technology">Technology &amp; SaaS (Software, Startups, Tech Companies)</option>
+              <option value="manufacturing">Manufacturing (Contract, Industrial, Production)</option>
+              <option value="real-estate">Real Estate (Investors, Brokerages, Property Management)</option>
+              <option value="education">Education (Schools, Tutoring, Online Courses)</option>
+              <option value="logistics">Logistics &amp; Supply Chain</option>
+              <option value="restaurant">Restaurant &amp; Food Service</option>
+              <option value="hospitality">Hospitality &amp; Travel</option>
+              <option value="energy">Energy &amp; Sustainability</option>
+              <option value="other">Other — Help me find the right agent</option>
+            </select>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="companySize">Company Size *</label>
-              <select id="companySize" name="companySize" required>
-                <option value="" disabled selected>Select size</option>
-                <option value="1-10">1–10 employees</option>
-                <option value="11-50">11–50 employees</option>
-                <option value="51-200">51–200 employees</option>
-                <option value="201-500">201–500 employees</option>
-                <option value="501-1000">501–1,000 employees</option>
-                <option value="1001+">1,001+ employees</option>
+              <label for="companySize">Business Size</label>
+              <select id="companySize" name="companySize">
+                <option value="" disabled selected>Number of employees</option>
+                <option value="solo">Solo / Founder only</option>
+                <option value="2-10">2&ndash;10 employees</option>
+                <option value="11-50">11&ndash;50 employees</option>
+                <option value="51-200">51&ndash;200 employees</option>
+                <option value="201+">201+ employees</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="industry">Industry *</label>
-              <select id="industry" name="industry" required>
-                <option value="" disabled selected>Select industry</option>
-                <option value="technology">Technology / SaaS</option>
-                <option value="healthcare">Healthcare</option>
-                <option value="finance">Finance & Banking</option>
-                <option value="manufacturing">Manufacturing</option>
-                <option value="retail">Retail & E-Commerce</option>
-                <option value="professional">Professional Services</option>
-                <option value="energy">Energy & Utilities</option>
-                <option value="logistics">Logistics & Supply Chain</option>
-                <option value="real-estate">Real Estate</option>
-                <option value="other">Other</option>
+              <label for="urgency">Session Timing</label>
+              <select id="urgency" name="urgency">
+                <option value="" disabled selected>When do you need this?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="this-week">This week</option>
+                <option value="this-month">This month</option>
+                <option value="exploring">Just exploring</option>
               </select>
             </div>
           </div>
 
           <div class="form-group">
-            <label>Service Area of Interest *</label>
-            <div class="checkbox-grid">
-              <label class="checkbox-item">
-                <input type="checkbox" name="services" value="strategy" />
-                <span>📊 Strategy & Management</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="services" value="digital" />
-                <span>🚀 Digital Transformation</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="services" value="finance" />
-                <span>💰 Financial Advisory</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="services" value="operations" />
-                <span>⚙️ Operations</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="services" value="hr" />
-                <span>👥 HR & Talent</span>
-              </label>
-              <label class="checkbox-item">
-                <input type="checkbox" name="services" value="growth" />
-                <span>📈 Growth & Marketing</span>
-              </label>
-            </div>
+            <label for="challenge">Describe Your Business Challenge *</label>
+            <textarea id="challenge" name="challenge" rows="5" placeholder="What specific problem do you need help with? The more detail you provide, the more targeted your session will be..." required></textarea>
           </div>
 
           <div class="form-group">
-            <label for="timeline">Engagement Timeline</label>
-            <select id="timeline" name="timeline">
-              <option value="" disabled selected>When do you need to start?</option>
-              <option value="asap">As soon as possible</option>
-              <option value="1month">Within 1 month</option>
-              <option value="3months">Within 3 months</option>
-              <option value="exploring">Just exploring for now</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Tell Us About Your Challenge *</label>
-            <textarea id="message" name="message" rows="5" placeholder="Describe the business challenge or opportunity you'd like to explore with us..." required></textarea>
+            <label for="goal">What does success look like for you?</label>
+            <textarea id="goal" name="goal" rows="3" placeholder="What would a good outcome from this session look like for your business?"></textarea>
           </div>
 
           <div class="form-group">
             <label class="checkbox-item consent">
               <input type="checkbox" name="consent" id="consent" required />
-              <span>I agree to Apex Consulting's <a href="#">Privacy Policy</a> and consent to being contacted regarding this inquiry.</span>
+              <span>I agree to Trimjourney's <a href="#">Privacy Policy</a> and understand this is a $100 paid advisory session.</span>
             </label>
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg submit-btn" id="submitBtn">
-            Send Message & Book Consultation
+            Book My Session &mdash; $100
           </button>
 
           <div class="form-success" id="formSuccess" aria-live="polite"></div>
@@ -172,34 +148,34 @@
       <!-- CONTACT INFO -->
       <div class="contact-info">
         <div class="info-block">
-          <h3>Why Consult With Us?</h3>
+          <h3>What to Expect</h3>
           <ul class="info-list">
             <li>
-              <span class="info-icon">⚡</span>
+              <span class="info-icon">&#x1F4CB;</span>
               <div>
-                <strong>24-Hour Response</strong>
-                <p>A senior consultant will reach out within one business day.</p>
+                <strong>Problem Definition</strong>
+                <p>We start by precisely defining your challenge so the advice is targeted, not generic.</p>
               </div>
             </li>
             <li>
-              <span class="info-icon">🎯</span>
+              <span class="info-icon">&#x1F5FA;&#xFE0F;</span>
               <div>
-                <strong>No-Obligation Discovery</strong>
-                <p>Our first call is free. No commitment, no pressure.</p>
+                <strong>Value Stream Analysis</strong>
+                <p>The agent maps where value is lost in your current process using Lean AI methodology.</p>
               </div>
             </li>
             <li>
-              <span class="info-icon">🔒</span>
+              <span class="info-icon">&#x2705;</span>
               <div>
-                <strong>100% Confidential</strong>
-                <p>All engagements are covered by mutual NDA from day one.</p>
+                <strong>Actionable Action Plan</strong>
+                <p>You leave with a prioritized, practical plan — not a generic report.</p>
               </div>
             </li>
             <li>
-              <span class="info-icon">🏆</span>
+              <span class="info-icon">&#x1F4B0;</span>
               <div>
-                <strong>Matched to the Right Expert</strong>
-                <p>We pair you with consultants who have direct experience in your industry and challenge.</p>
+                <strong>Fixed $100 Commitment</strong>
+                <p>Transparent pricing. 30 minutes. No hidden fees or upsell pressure.</p>
               </div>
             </li>
           </ul>
@@ -209,39 +185,32 @@
           <h3>Contact Details</h3>
           <div class="contact-details">
             <div class="contact-detail-item">
-              <span class="detail-icon-wrap">✉</span>
+              <span class="detail-icon-wrap">@</span>
               <div>
                 <strong>Email</strong>
-                <a href="mailto:hello@apexconsulting.com">hello@apexconsulting.com</a>
+                <a href="mailto:hello@trimjourney.com">hello@trimjourney.com</a>
               </div>
             </div>
             <div class="contact-detail-item">
-              <span class="detail-icon-wrap">📞</span>
+              <span class="detail-icon-wrap">&#x1F310;</span>
               <div>
-                <strong>Phone</strong>
-                <a href="tel:+18005550199">+1 (800) 555-0199</a>
-              </div>
-            </div>
-            <div class="contact-detail-item">
-              <span class="detail-icon-wrap">🌍</span>
-              <div>
-                <strong>Offices</strong>
-                <span>New York · London · Singapore · Dubai</span>
+                <strong>Website</strong>
+                <span>trimjourney.com</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="info-block urgency-block">
-          <div class="urgency-badge">🔥 High Demand</div>
-          <p><strong>We're currently at 85% capacity.</strong> To secure your onboarding slot in the next cohort, reach out this week.</p>
+          <div class="urgency-badge">Session Availability</div>
+          <p><strong>Sessions are booked in limited slots.</strong> Submit your request now and we'll confirm your time within 24 hours.</p>
           <div class="social-proof">
             <div class="sp-avatars">
-              <div class="sp-av">JM</div>
-              <div class="sp-av">SR</div>
-              <div class="sp-av">DK</div>
+              <div class="sp-av">DM</div>
+              <div class="sp-av">RK</div>
+              <div class="sp-av">SN</div>
             </div>
-            <span>12 companies reached out this week</span>
+            <span>28 business owners booked this week</span>
           </div>
         </div>
       </div>
@@ -259,56 +228,56 @@
       <div class="faq-list" id="faqList">
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            How long does a typical engagement last?
-            <span class="faq-arrow">↓</span>
+            Why is there a $100 session fee?
+            <span class="faq-arrow">&#x2193;</span>
           </button>
           <div class="faq-answer">
-            <p>Engagement length varies by scope. Project-based engagements typically run 30–120 days. Embedded partnerships range from 3 to 12 months. Advisory retainers are ongoing. We design the engagement duration during our discovery call based on your specific needs and timeline.</p>
+            <p>The $100 commitment ensures both parties are serious about getting results. It covers the 30-minute session with a Trimjourney-powered AI advisor and the actionable plan you receive at the end. It's a small investment compared to the value of solving a real business problem.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            What does a consulting engagement cost?
-            <span class="faq-arrow">↓</span>
+            How is this different from using a general AI chatbot?
+            <span class="faq-arrow">&#x2193;</span>
           </button>
           <div class="faq-answer">
-            <p>Pricing depends on scope, duration, and team size. We offer project-based fixed fees, monthly retainers, and time-and-materials models. We provide a transparent proposal after the discovery call — there are no hidden costs. We work with companies ranging from growth-stage startups to enterprise organizations.</p>
+            <p>Generic AI tools give generic answers. Trimjourney agents are trained on deep industry-specific knowledge — they understand your sector's regulations, benchmarks, business models, and common failure modes. Combined with our Lean AI methodology, every session is structured to produce a specific, prioritized action plan for your situation.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            How quickly can you get started?
-            <span class="faq-arrow">↓</span>
+            What happens after I submit this form?
+            <span class="faq-arrow">&#x2193;</span>
           </button>
           <div class="faq-answer">
-            <p>For urgent needs, we can mobilize a team within 1–2 weeks of contract signing. Standard onboarding is typically 3–4 weeks. We have a bench of available consultants specifically to handle fast-track engagements.</p>
+            <p>We'll confirm your session within 24 hours and send you a calendar link to schedule your 30-minute advisory session. You'll also receive a short pre-session questionnaire to help us make the most of your time.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            Do you work with startups or only large enterprises?
-            <span class="faq-arrow">↓</span>
+            What if my industry isn't listed?
+            <span class="faq-arrow">&#x2193;</span>
           </button>
           <div class="faq-answer">
-            <p>We work with organizations across all sizes — from Series A startups to Fortune 500 enterprises. Our team composition and engagement model adapt to the stage of the company. Startup engagements are often more focused and faster-paced; enterprise engagements tend to involve broader organizational change.</p>
+            <p>Select "Other" and describe your business. We cover 12+ industries and many adjacent sectors. If we can't match you with the right agent, we'll tell you honestly and point you in the right direction — no charge.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            What makes Apex different from other consulting firms?
-            <span class="faq-arrow">↓</span>
+            Can I book multiple sessions?
+            <span class="faq-arrow">&#x2193;</span>
           </button>
           <div class="faq-answer">
-            <p>Three things: (1) We're accountable to outcomes, not just deliverables — KPIs are agreed upfront. (2) We stay through implementation, not just strategy. (3) Our consultants are former operators who've run businesses, not just studied them. We have a 96% client retention rate because clients see real results.</p>
+            <p>Yes. Many business owners book recurring sessions as they implement recommendations and face new challenges. You can also book sessions with different industry agents if your business spans multiple sectors.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            Is the initial consultation really free?
-            <span class="faq-arrow">↓</span>
+            Is my business information kept confidential?
+            <span class="faq-arrow">&#x2193;</span>
           </button>
           <div class="faq-answer">
-            <p>Yes, completely. The initial 30-minute discovery call is free with no obligation. We use this time to understand your challenge and whether we're the right fit. If we're not, we'll tell you honestly and may even refer you to someone who is.</p>
+            <p>Absolutely. All session information is treated as confidential. We do not share, sell, or use your business details for any purpose beyond delivering your advisory session. Your privacy is a core commitment of ours.</p>
           </div>
         </div>
       </div>
@@ -318,51 +287,49 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="index.html" class="logo logo-light">
-          <span class="logo-icon">▲</span> Apex<span class="logo-accent">Consulting</span>
+        <a href="index.html" class="logo">
+          <img src="https://cdn.prod.website-files.com/6809eaaf47bf019524e9dd22/6809fa63d39a2c935b9d1035_logo-trimjourney.avif" alt="Trimjourney" class="logo-img-light" />
         </a>
-        <p>Transforming businesses with expert strategy, technology, and operational excellence since 2008.</p>
+        <p>Precisely cutting away complexity — delivering streamlined AI-powered advisory for business owners across every industry.</p>
         <div class="social-links">
           <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="Email">✉</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="Email">@</a>
         </div>
       </div>
       <div class="footer-links">
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Our Agents</h4>
           <ul>
-            <li><a href="services.html#strategy">Strategy & Management</a></li>
-            <li><a href="services.html#digital">Digital Transformation</a></li>
-            <li><a href="services.html#finance">Financial Advisory</a></li>
-            <li><a href="services.html#operations">Operations</a></li>
-            <li><a href="services.html#hr">HR & Talent</a></li>
-            <li><a href="services.html#marketing">Growth & Marketing</a></li>
+            <li><a href="agents.html#healthcare">Healthcare</a></li>
+            <li><a href="agents.html#finance">Finance &amp; Banking</a></li>
+            <li><a href="agents.html#retail">Retail &amp; E-Commerce</a></li>
+            <li><a href="agents.html#legal">Legal Services</a></li>
+            <li><a href="agents.html#technology">Technology &amp; SaaS</a></li>
+            <li><a href="agents.html#manufacturing">Manufacturing</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="about.html#team">Our Team</a></li>
-            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="agents.html">All Agents</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li>hello@apexconsulting.com</li>
-            <li>+1 (800) 555-0199</li>
-            <li>New York · London · Singapore</li>
+            <li>hello@trimjourney.com</li>
+            <li>Book a session: $100 / 30 min</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <span>© 2025 Apex Consulting. All rights reserved.</span>
-        <span>Privacy Policy · Terms of Service</span>
+        <span>&copy; 2026 Trimjourney. All rights reserved.</span>
+        <span>Privacy Policy &middot; Terms of Service</span>
       </div>
     </div>
   </footer>
