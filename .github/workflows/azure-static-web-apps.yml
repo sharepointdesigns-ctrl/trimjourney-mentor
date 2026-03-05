@@ -37,8 +37,7 @@ jobs:
           # does not error searching for a 'build' or 'build:azure' entry.
           app_location: "/"
           api_location: "api"
-          output_location: ""
-          app_build_command: "npm run build:azure"
+          output_location: "."
           production_branch: "claude/create-consulting-website-ah3Sr"
         env:
           # Allow the workflow to succeed even if the secret has not yet been
