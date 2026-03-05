@@ -100,7 +100,7 @@
 .big-num {
   font-size: 2.6rem;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--accent);
   line-height: 1;
   display: block;
 }
@@ -173,8 +173,8 @@ cite {
 }
 
 .engagement-card.popular {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--bg-dark);
+  border-color: var(--bg-dark);
 }
 
 .engagement-card.popular h3,
