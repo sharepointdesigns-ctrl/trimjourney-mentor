@@ -1,11 +1,6 @@
 const Anthropic = require('@anthropic-ai/sdk');
 
-const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
-  'Content-Type': 'application/json'
-};
+const JSON_HEADER = { 'Content-Type': 'application/json' };
 
 const AGENT_PROMPTS = {
   general: `You are a Trimjourney AI Business Advisor — helping business owners cut through complexity and find clear, actionable solutions. Trimjourney's approach is built on Lean Six Sigma principles and AI automation expertise. Our tagline: "Your AI Challenge, Our Clear Approach."
@@ -86,19 +81,13 @@ Reference key metrics (LCOE, payback period, ROI). Suggest a full session at tri
 };
 
 module.exports = async function (context, req) {
-  // Handle CORS preflight
-  if (req.method === 'OPTIONS') {
-    context.res = { status: 200, headers: CORS_HEADERS };
-    return;
-  }
-
   try {
     const { messages, industry = 'general' } = req.body || {};
 
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       context.res = {
         status: 400,
-        headers: CORS_HEADERS,
+        headers: JSON_HEADER,
         body: JSON.stringify({ error: 'A messages array is required.' })
       };
       return;
@@ -109,7 +98,7 @@ module.exports = async function (context, req) {
       context.log.error('ANTHROPIC_API_KEY environment variable is not set.');
       context.res = {
         status: 500,
-        headers: CORS_HEADERS,
+        headers: JSON_HEADER,
         body: JSON.stringify({ error: 'Service configuration error. Please try again later.' })
       };
       return;
@@ -130,14 +119,14 @@ module.exports = async function (context, req) {
 
     context.res = {
       status: 200,
-      headers: CORS_HEADERS,
+      headers: JSON_HEADER,
       body: JSON.stringify({ content: response.content[0].text })
     };
   } catch (err) {
     context.log.error('Chat API error:', err.message);
     context.res = {
       status: 500,
-      headers: CORS_HEADERS,
+      headers: JSON_HEADER,
       body: JSON.stringify({ error: 'Something went wrong. Please try again.' })
     };
   }
