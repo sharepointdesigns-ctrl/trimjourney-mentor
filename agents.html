@@ -7,6 +7,7 @@
   <meta name="description" content="Browse Trimjourney's specialized AI advisors by industry. Each agent delivers expert guidance tailored to your business sector." />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/services.css" />
+  <link rel="stylesheet" href="css/chat.css" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -58,7 +59,10 @@
           <div class="feature-item"><span class="feature-dot"></span>EHR selection and technology adoption</div>
           <div class="feature-item"><span class="feature-dot"></span>Value-based care transition strategies</div>
         </div>
-        <a href="contact.html?agent=healthcare" class="btn btn-primary">Book Healthcare Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="healthcare">Chat Now &rarr;</button>
+          <a href="contact.html?agent=healthcare" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
       <div class="service-detail-card">
         <div class="detail-stat-card">
@@ -110,7 +114,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Fintech integration and digital transformation</div>
           <div class="feature-item"><span class="feature-dot"></span>Fee structure and profitability optimization</div>
         </div>
-        <a href="contact.html?agent=finance" class="btn btn-primary">Book Finance Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="finance">Chat Now &rarr;</button>
+          <a href="contact.html?agent=finance" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
     </div>
   </section>
@@ -133,7 +140,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Omnichannel fulfillment strategy</div>
           <div class="feature-item"><span class="feature-dot"></span>Seasonal planning &amp; markdown optimization</div>
         </div>
-        <a href="contact.html?agent=retail" class="btn btn-primary">Book Retail Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="retail">Chat Now &rarr;</button>
+          <a href="contact.html?agent=retail" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
       <div class="service-detail-card">
         <div class="detail-stat-card">
@@ -184,7 +194,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Profitability by practice area analysis</div>
           <div class="feature-item"><span class="feature-dot"></span>Associate leverage and staffing models</div>
         </div>
-        <a href="contact.html?agent=legal" class="btn btn-primary">Book Legal Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="legal">Chat Now &rarr;</button>
+          <a href="contact.html?agent=legal" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
     </div>
   </section>
@@ -207,7 +220,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Product-led growth &amp; onboarding optimization</div>
           <div class="feature-item"><span class="feature-dot"></span>Pricing strategy and packaging</div>
         </div>
-        <a href="contact.html?agent=technology" class="btn btn-primary">Book Tech Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="technology">Chat Now &rarr;</button>
+          <a href="contact.html?agent=technology" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
       <div class="service-detail-card">
         <div class="detail-stat-card">
@@ -258,7 +274,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Cost reduction and margin improvement</div>
           <div class="feature-item"><span class="feature-dot"></span>Automation ROI assessment</div>
         </div>
-        <a href="contact.html?agent=manufacturing" class="btn btn-primary">Book Manufacturing Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="manufacturing">Chat Now &rarr;</button>
+          <a href="contact.html?agent=manufacturing" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
     </div>
   </section>
@@ -281,7 +300,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Short-term rental optimization (STR/Airbnb)</div>
           <div class="feature-item"><span class="feature-dot"></span>Market timing and exit strategies</div>
         </div>
-        <a href="contact.html?agent=real-estate" class="btn btn-primary">Book Real Estate Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="real-estate">Chat Now &rarr;</button>
+          <a href="contact.html?agent=real-estate" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
       <div class="service-detail-card">
         <div class="detail-stat-card">
@@ -330,7 +352,10 @@
           <div class="feature-item"><span class="feature-dot"></span>Online course creation and scaling</div>
           <div class="feature-item"><span class="feature-dot"></span>Accreditation and compliance guidance</div>
         </div>
-        <a href="contact.html?agent=education" class="btn btn-primary">Book Education Agent &rarr;</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-accent" data-chat-open="education">Chat Now &rarr;</button>
+          <a href="contact.html?agent=education" class="btn btn-outline-dark">Book a Session</a>
+        </div>
       </div>
     </div>
   </section>
@@ -437,5 +462,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
 </body>
 </html>

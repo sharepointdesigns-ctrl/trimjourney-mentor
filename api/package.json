@@ -1,0 +1,11 @@
+{
+  "name": "trimjourney-api",
+  "version": "1.0.0",
+  "description": "Trimjourney AI Advisor API",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  }
+}
