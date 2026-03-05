@@ -1,0 +1,8 @@
+{
+  "name": "apex-consulting-website",
+  "version": "1.0.0",
+  "description": "Static business consulting website for Azure Static Web Apps",
+  "scripts": {
+    "build:azure": "echo 'Static HTML/CSS/JS site — no build step required'"
+  }
+}
