@@ -24,3 +24,4 @@ build/
 
 # Azure
 .azure/
+api/node_modules
