@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Apex Consulting</title>
+  <meta name="description" content="Get in touch with Apex Consulting for a free strategy consultation. We respond within 24 hours." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">▲</span> Apex<span class="logo-accent">Consulting</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <div class="section-tag">Get In Touch</div>
+      <h1>Let's Talk About Your <span class="gradient-text">Business</span></h1>
+      <p>Every engagement starts with a conversation. Tell us about your challenge and we'll connect you with the right expert within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT MAIN -->
+  <section class="section contact-section">
+    <div class="container contact-inner">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Book Your Free <span class="gradient-text">Consultation</span></h2>
+        <p>Fill in the details below and a senior consultant will reach out within 24 hours.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="James" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Morgan" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" placeholder="james@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (800) 555-0199" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" name="company" placeholder="Acme Corporation" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="companySize">Company Size *</label>
+              <select id="companySize" name="companySize" required>
+                <option value="" disabled selected>Select size</option>
+                <option value="1-10">1–10 employees</option>
+                <option value="11-50">11–50 employees</option>
+                <option value="51-200">51–200 employees</option>
+                <option value="201-500">201–500 employees</option>
+                <option value="501-1000">501–1,000 employees</option>
+                <option value="1001+">1,001+ employees</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry *</label>
+              <select id="industry" name="industry" required>
+                <option value="" disabled selected>Select industry</option>
+                <option value="technology">Technology / SaaS</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="finance">Finance & Banking</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="retail">Retail & E-Commerce</option>
+                <option value="professional">Professional Services</option>
+                <option value="energy">Energy & Utilities</option>
+                <option value="logistics">Logistics & Supply Chain</option>
+                <option value="real-estate">Real Estate</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Service Area of Interest *</label>
+            <div class="checkbox-grid">
+              <label class="checkbox-item">
+                <input type="checkbox" name="services" value="strategy" />
+                <span>📊 Strategy & Management</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="services" value="digital" />
+                <span>🚀 Digital Transformation</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="services" value="finance" />
+                <span>💰 Financial Advisory</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="services" value="operations" />
+                <span>⚙️ Operations</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="services" value="hr" />
+                <span>👥 HR & Talent</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="services" value="growth" />
+                <span>📈 Growth & Marketing</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="timeline">Engagement Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="" disabled selected>When do you need to start?</option>
+              <option value="asap">As soon as possible</option>
+              <option value="1month">Within 1 month</option>
+              <option value="3months">Within 3 months</option>
+              <option value="exploring">Just exploring for now</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Challenge *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe the business challenge or opportunity you'd like to explore with us..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-item consent">
+              <input type="checkbox" name="consent" id="consent" required />
+              <span>I agree to Apex Consulting's <a href="#">Privacy Policy</a> and consent to being contacted regarding this inquiry.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg submit-btn" id="submitBtn">
+            Send Message & Book Consultation
+          </button>
+
+          <div class="form-success" id="formSuccess" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>Why Consult With Us?</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon">⚡</span>
+              <div>
+                <strong>24-Hour Response</strong>
+                <p>A senior consultant will reach out within one business day.</p>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">🎯</span>
+              <div>
+                <strong>No-Obligation Discovery</strong>
+                <p>Our first call is free. No commitment, no pressure.</p>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">🔒</span>
+              <div>
+                <strong>100% Confidential</strong>
+                <p>All engagements are covered by mutual NDA from day one.</p>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon">🏆</span>
+              <div>
+                <strong>Matched to the Right Expert</strong>
+                <p>We pair you with consultants who have direct experience in your industry and challenge.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <h3>Contact Details</h3>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <span class="detail-icon-wrap">✉</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@apexconsulting.com">hello@apexconsulting.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-icon-wrap">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+18005550199">+1 (800) 555-0199</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <span class="detail-icon-wrap">🌍</span>
+              <div>
+                <strong>Offices</strong>
+                <span>New York · London · Singapore · Dubai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-block urgency-block">
+          <div class="urgency-badge">🔥 High Demand</div>
+          <p><strong>We're currently at 85% capacity.</strong> To secure your onboarding slot in the next cohort, reach out this week.</p>
+          <div class="social-proof">
+            <div class="sp-avatars">
+              <div class="sp-av">JM</div>
+              <div class="sp-av">SR</div>
+              <div class="sp-av">DK</div>
+            </div>
+            <span>12 companies reached out this week</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">FAQ</div>
+        <h2>Common <span class="gradient-text">Questions</span></h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does a typical engagement last?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Engagement length varies by scope. Project-based engagements typically run 30–120 days. Embedded partnerships range from 3 to 12 months. Advisory retainers are ongoing. We design the engagement duration during our discovery call based on your specific needs and timeline.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What does a consulting engagement cost?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Pricing depends on scope, duration, and team size. We offer project-based fixed fees, monthly retainers, and time-and-materials models. We provide a transparent proposal after the discovery call — there are no hidden costs. We work with companies ranging from growth-stage startups to enterprise organizations.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How quickly can you get started?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>For urgent needs, we can mobilize a team within 1–2 weeks of contract signing. Standard onboarding is typically 3–4 weeks. We have a bench of available consultants specifically to handle fast-track engagements.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you work with startups or only large enterprises?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>We work with organizations across all sizes — from Series A startups to Fortune 500 enterprises. Our team composition and engagement model adapt to the stage of the company. Startup engagements are often more focused and faster-paced; enterprise engagements tend to involve broader organizational change.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What makes Apex different from other consulting firms?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Three things: (1) We're accountable to outcomes, not just deliverables — KPIs are agreed upfront. (2) We stay through implementation, not just strategy. (3) Our consultants are former operators who've run businesses, not just studied them. We have a 96% client retention rate because clients see real results.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is the initial consultation really free?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, completely. The initial 30-minute discovery call is free with no obligation. We use this time to understand your challenge and whether we're the right fit. If we're not, we'll tell you honestly and may even refer you to someone who is.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light">
+          <span class="logo-icon">▲</span> Apex<span class="logo-accent">Consulting</span>
+        </a>
+        <p>Transforming businesses with expert strategy, technology, and operational excellence since 2008.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#strategy">Strategy & Management</a></li>
+            <li><a href="services.html#digital">Digital Transformation</a></li>
+            <li><a href="services.html#finance">Financial Advisory</a></li>
+            <li><a href="services.html#operations">Operations</a></li>
+            <li><a href="services.html#hr">HR & Talent</a></li>
+            <li><a href="services.html#marketing">Growth & Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@apexconsulting.com</li>
+            <li>+1 (800) 555-0199</li>
+            <li>New York · London · Singapore</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Apex Consulting. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
