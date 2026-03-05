@@ -35,7 +35,7 @@ jobs:
           # app_build_command runs the no-op script in package.json so Oryx
           # does not error searching for a 'build' or 'build:azure' entry.
           app_location: "/"
-          api_location: ""
+          api_location: "api"
           output_location: ""
           app_build_command: "npm run build:azure"
           production_branch: "claude/create-consulting-website-ah3Sr"
