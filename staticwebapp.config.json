@@ -13,8 +13,8 @@
       "rewrite": "/blog.html"
     },
     {
-      "route": "/blog/why-ai-advisory-works",
-      "rewrite": "/blog/why-ai-advisory-works.html"
+      "route": "/blog-why-ai-advisory-works",
+      "rewrite": "/blog-why-ai-advisory-works.html"
     }
   ],
   "globalHeaders": {
